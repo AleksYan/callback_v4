@@ -35,12 +35,16 @@
                 
         scriptParams[scriptParams.length-1].childNodes[1].outerHTML = newTextFieldOuterHtml;
 
-        clickApply();
+        clickApplySave();
     }
 
-    function clickApply(){
-        var applyButton = document.getElementById("applyCallControl")
+    function clickApplySave(){
+        var applyButton = document.getElementById("applyCallControl");
         applyButton.click()
+
+        var submitButton = document.getElementById("submitBtn");
+        setTimeout(submitButton.click(), 1000);
+
     }
  
 
