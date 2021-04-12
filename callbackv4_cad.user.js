@@ -17,9 +17,9 @@
     applyChangeButtonDiv.setAttribute("class","col-sm-2");
     applyChangeButtonDiv.setAttribute("onclick","event.stopPropagation()");
     var updateCadValue = document.createElement("Button");
-    updateCadValue.innerHTML = "Update CAD Value";
+    updateCadValueBtn.innerHTML = "Update CAD Value";
     
-    applyChangeButtonDiv.appendChild(updateCadValue);
+    applyChangeButtonDiv.appendChild(updateCadValueBtn);
     
     const callControlDiv = document.getElementById('callControlPanel').firstElementChild;
     callControlDiv.appendChild(applyChangeButtonDiv);
@@ -44,7 +44,7 @@
     }
  
 
-    updateCadValue.addEventListener('click', (e)=>{
+    updateCadValueBtn.addEventListener('click', (e)=>{
      updateCadValue();
         e.stopPropagation();
         e.preventDefault();
