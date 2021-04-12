@@ -31,7 +31,7 @@
         var scriptParams = document.getElementById("controlScriptParamsDiv").getElementsByClassName("form-group");
         var i = scriptParams.length-1
 
-        var newTextFieldOuterHtml = `<div class="col-sm-4"><input id="controlScriptParam_${i}" type="text" value="abcdefg" class="form-control"></div>`;
+        var newTextFieldOuterHtml = `<div class="col-sm-4"><input id="controlScriptParam_${i}" type="text" value="CallbackRequested,CustomerName,primarySkill,primaryAgentName" class="form-control"></div>`;
                 
         scriptParams[scriptParams.length-1].childNodes[1].outerHTML = newTextFieldOuterHtml;
 
