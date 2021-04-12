@@ -27,12 +27,6 @@
        
     
     function populateCadValue (){
-        if (Object.keys(scriptParamsObj).length === 0){
-            console.log("----AY----: No params were copied");
-            alert("No script parameters were copied.");
-        }else{
-            console.log(scriptParamsObj);
-            console.log("----AY----: Fetching script params names")
             var scriptParams = document.getElementById("controlScriptParamsDiv").getElementsByClassName("form-group");
 
             for (var i = 0; i<scriptParams.length; i++){
@@ -52,16 +46,16 @@
                 }
             }
 
-        }
+        
     }
     function replaceTextValue(i,paramValue){
 
         console.log("---AY---: i am replaceTextValue function");
-
-        var newTextFieldOuterHtml = `<div class="col-sm-4"><input id="controlScriptParam_${i}" type="text" value="${paramValue}" class="form-control"></div>`;
-
         var scriptParams = document.getElementById("controlScriptParamsDiv").getElementsByClassName("form-group");
-        scriptParams[i].childNodes[1].outerHTML = newTextFieldOuterHtml;
+
+        var newTextFieldOuterHtml = `<div class="col-sm-4"><input id="controlScriptParam_${scriptParams.length-1}" type="text" value="abcdefg" class="form-control"></div>`;
+                
+        scriptParams[scriptParams.length-1].childNodes[1].outerHTML = newTextFieldOuterHtml;
     }
 
  
