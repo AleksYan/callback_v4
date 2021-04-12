@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WxCC_Script_callback_v4_change
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  helper script to update callbackv4 CADVariablesToInclude value
 // @author       Aleksey Yankovskyy (ayankovs@cisco.com)
 // @match        https://portal.wxcc-eu1.cisco.com/cdsui/rs/*
