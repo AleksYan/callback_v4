@@ -16,7 +16,7 @@
     applyChangeButtonDiv.setAttribute("id","copy-btn-div");
     applyChangeButtonDiv.setAttribute("class","col-sm-2");
     applyChangeButtonDiv.setAttribute("onclick","event.stopPropagation()");
-    var updateCadValue = document.createElement("Button");
+    var updateCadValueBtn = document.createElement("Button");
     updateCadValueBtn.innerHTML = "Update CAD Value";
     
     applyChangeButtonDiv.appendChild(updateCadValueBtn);
